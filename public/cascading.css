@@ -1,0 +1,27 @@
+.box-1{
+    background-color: black;
+    color: white;
+}
+.container{
+    margin:auto;
+    width: 80%;
+
+}
+h2{
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+.box{
+    height: 300px;
+    width: 100%;
+    border: 5px solid rgb(255, 42, 0);
+    border-style: dashed;
+}
+p{
+    line-height:1.6em;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight:900
+}

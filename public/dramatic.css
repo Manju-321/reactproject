@@ -1,0 +1,30 @@
+.header{
+    height: 250px;
+    background-color: rgb(73, 97, 50);
+}
+#head{
+    height: 80px;
+}
+.footer{
+    background-color: darkorange;
+}
+img{
+    
+    height: 300px;
+}
+a span:hover{
+    color: darkorange;
+}
+a{
+    text-decoration: none;
+}
+.opt{
+    opacity: 0.5;
+}
+a:hover {
+    color: red;
+}
+/* .container{
+    width: 70%;
+    margin: auto;
+} */

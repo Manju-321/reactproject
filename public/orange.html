@@ -1,0 +1,151 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orange</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./orange.css">
+</head>
+<body class="container-fluid p-2 bg-dark">
+    <div class="container">
+        <nav class="d-flex justify-content-between">
+            <div class="ms-3"><h1>Orange</h1></div>
+            <div class="p-3">
+                <span class="p-3">Home</span>
+                <span class="p-3">Contact Us</span>
+                <span class="p-3">Blog</span>
+                <span class="p-3">Details</span>
+            </div>
+            <div class="gap p-3">
+                <span class="bi bi-globe me-3"></span>
+                <span class="bi bi-instagram me-3"></span>
+                <span class="bi bi-facebook me-3"></span>
+                <span class="bi bi-whatsapp me-3"></span>
+                <span class="bi bi-twitter me-3"></span>
+            </div>
+        </nav>
+        <header class="mt-5 d-flex p-3">
+            <div>
+                <h2>Website Template</h2>
+                <p>Aliquam in odio ut ipsum mollis facilisis.Integer est sem,dignissim quis auctor vel,dapibus vel massa. Curabitur vulputate ligula vel mi srmper tempus.</p>
+                <button>Learn More</button>
+            </div>
+        </header>
+        <div class="content mt-3">
+          <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="./song.jpg" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="./OIP.jpeg" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="./Logo.jpeg" alt="Third slide">
+              </div>
+            </div>
+          </div>
+        </div> 
+    </div>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+</head>
+<body>
+  <label>Calculator</label><input id="val1"/>
+  <input id="val2"/>
+  <br>
+  <button id="addbtn">Add</button>
+  <button id="subbtn">Sub</button>
+  <button id="mulbtn">Mul</button>
+  <p id="Result">  </p>
+ 
+</body>
+
+<script>
+  document.getElementById("addbtn").onclick=add2Numbers;
+  document.getElementById("subbtn").onclick=sub2Numbers;
+  document.getElementById("mulbtn").onclick=mul2Numbers;
+
+  function add2Numbers()
+  {
+     var a=document.getElementById("val1").value;
+     var b=document.getElementById("val2").value;
+     var res=parseInt(a)+parseInt(b);
+     document.getElementById("Result").innerHTML=res;
+  }
+  function sub2Numbers()
+  {
+     let a=document.getElementById("val1").value;
+     let b=document.getElementById("val2").value;
+     let res=parseInt(a)-parseInt(b);
+     document.getElementById("Result").innerHTML=res;
+  }
+  function mul2Numbers()
+  {
+     let a=document.getElementById("val1").value;
+     let b=document.getElementById("val2").value;
+     let res=parseInt(a)*parseInt(b);
+     document.getElementById("Result").innerHTML=res;
+  }
+</script>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>JavaScript Array Methods</h1>
+  <p id="demo"></p>
+  <script>
+    const myArr = [[1,1],[2,2],[3,3]];
+
+    const newArr = myArr.flat();
+    document.getElementById("demo").innerHTML= newArr;
+  </script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    <h1 id="demo"> </h1>
+    <script>
+      showtime=()=>{
+        let date=new Date();
+        let h=date.getHours();
+        let m=date.getMinutes();
+        let s=date.getSeconds();
+        
+        let session="AM";
+        if(h<12)
+        {
+          document.write("AM");
+        }else{
+          document.write("PM");
+        }
+
+        let time=(`${h}:${m}:${s} :${session}`);
+        document.getElementById("demo").innerHTML=time;
+
+        setTimeout(showtime,1000);
+      }
+      showtime();
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+.container{
+    border: 2px solid white;
+}
+nav{
+    background-color: darkorange;
+    border-radius: 10px;
+}
+header{
+    height: 200px;
+    background-color: darkorange;
+    border-radius: 5px;
+}
+img{
+    height: 150px;
+    width: 350px;
+}
+.content{
+    height: 150px;
+    background-color: chartreuse;
+    border-radius: 5px;
+}
