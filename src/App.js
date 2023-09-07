@@ -12,15 +12,24 @@ import './App.css';
 // import Program1 from './components/API\'s/program1';
 // import Program2 from './components/API\'s/program2';
 // import FakestoreIndex from './components/API\'s/fakestore.api/fakestore-index';
-import Home from './components/API\'s/home';
-import Project from './components/Project/project';
+// import Home from './components/API\'s/home';
+// import Project from './components/Project/project';
+import Program1 from './components/API\'s/program1';
+import Father from './components/argument-folder/father';
+import FormDemo from './components/form-validations/form-demo';
+import FormHome from './components/form-validations/form-home';
+import { Formik } from 'formik';
+import FormikVal from './components/form-validations/formik-val';
+import FormikYup from './components/form-validations/form-yup';
+import FormikForm from './components/form-validations/formik-form';
+import Project from './components/API\'s/project/project';
 
 
 
 const App=()=> {
   return (
     <div className="App">
-       <Project />
+       <Project/>
     </div>
   );
 }

@@ -16,17 +16,17 @@ const Program2=()=>
     return(
         <div className="container-fluid">
             <table className="table table-hover overflow-auto m-2">
-                <thead>
+                <thead className="bg-primary text-white">
                     <tr>
-                        <th className="bg-primary text-white">TITLE</th>
-                        <th className="bg-primary text-white">BRAND</th>
-                        <th className="bg-primary text-white">PRICE</th>
-                        <th className="bg-primary text-white">IMAGES</th>
+                        <th>TITLE</th>
+                        <th>BRAND</th>
+                        <th>PRICE</th>
+                        <th>IMAGES</th>
                     </tr>
                 </thead>
                 <tbody>
                     {
-                        category.products.map((cat)=>
+                        products.products.map((cat)=>
                         <tr key={cat}>
                             <td>{cat.title}</td>
                             <td>{cat.brand}</td>

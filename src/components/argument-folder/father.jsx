@@ -2,7 +2,7 @@ import React,{useState} from "react";
 import Child from "./child";
 import Grandchildren2 from "./grandchildren2";
 
-const Father=(prpos)=>{
+const Father=(props)=>{
     const [user,setUser] = useState("Manju");
     const updateuser=(e)=>{
         return setUser(e)
@@ -11,11 +11,11 @@ const Father=(prpos)=>{
         <div className="container-fluid">
             <h2>Parent Component</h2>
             <h2>{user}</h2>
-            <h2>{prpos.grandchild}</h2>
-            <h2>{prpos.family}</h2>
-            <h2>{prpos.qwe}</h2>
-            <Child value={user} click={updateuser} abc={prpos.grandchild} rty={prpos.qwe}/>
-            <Grandchildren2 poi={prpos.qwe}/>
+            <h2>{props.grandchild}</h2>
+            <h2>{props.family}</h2>
+            <h2>{props.qwe}</h2>
+            <Child value={user} click={updateuser} abc={props.grandchild} rty={props.qwe}/>
+            <Grandchildren2 poi={props.qwe}/>
         </div>
     )
 }

@@ -4,21 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+        const SubmitClick=()=>{
+            let units = prompt("enter units");
+            // if(units<50){
+            //     alert(units*1);
+            // }
+            // 50 1     100 2
+            if(units<100){
+                
+                if (units<=50)
+                 alert("bill is:"+ units*2)
+                else{
+                    alert("bill is"+  (50  + (units-50)*4))
+                }
+            }
+            
+            // let x = prompt("enter a number");
+            // if(x%2==0){
+            //     alert("valid");
+            // }else{
+            //     alert("invalid");
+            // }
+            // let x = prompt("Enter Time");
+            // if(x>2 && x<11){
+            //     alert("Good Morning");
+            // }else if(x>11 && x<16){
+            //     alert("Good Afternoon");
+            // }else if(x>17 && x<22){
+            //     alert("Good Evening");
+            // }else{
+            //     alert("Good Night");
+            // }
+        }
+    </script>
+    <!-- <script>
+        function CreateClick(){
+            folderName = prompt("Enter Folder Name");
+            if(folderName==" "){
+                alert("enter folder name");
+            }else if(folderName==null){
+                alert("you cancelled");
+            }else{
+                document.querySelector("p").innerHTML += "Folder Name is : "+ folderName + "<br>";
+            }
+        }
+    </script> -->
 </head>
 <body>
-    <h1>Variables</h1>
-    <!-- <script src="../src/module/control.js"></script> -->
-    <script>
-        // const string1 = "Hello";
-        // const string2 = "World";
-        // console.log(string1+" "+string2);
+    <input type="text" id="folderName" placeholder="Folder Name"><button onclick="SubmitClick()">Submit</button>
+    <div></div>
+    <!-- <button onclick="CreateClick()">Create Folder</button>
+    <p></p> -->
+<!-- //     <h1>Variables</h1>
+//     your name is:<span> </span>
+//     <img src="./logo1.jpeg"  name="pic" alt="" height="200" width="250">
+//     <input type="text"><input type="button" id="btnlogin"> -->
+ <!-- <script src="../src/module/control.js"></script>
+//     <script>
+//         const string1 = "Hello";
+//         const string2 = "World";
+//         console.log(string1+" "+string2);
 //         CREATE TABLE table_name (
 //   column1 datatype,
 //   column2 datatype,
 //   column3 datatype,
 //   ...
 // );
-    </script>
+//     </script> -->
     
 </body>
 </html>

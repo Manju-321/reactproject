@@ -1,0 +1,17 @@
+.card{
+    width: 200px;
+}
+.card:nth-child(odd){
+    background-color: aqua;
+}
+.card:nth-child(odd) button{
+    background-color: black;
+    color:white;
+}
+.card:nth-child(even){
+    background-color: darkgray;
+}
+.card:nth-child(even) button{
+    background-color: deeppink;
+    color:black;
+}
